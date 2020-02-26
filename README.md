@@ -11,11 +11,11 @@ A [GoTek](http://www.gotekemulator.com) is a piece of hardware designed to physi
 
 In order to use the GoTek you will first need to change the firmware to a new version called [FlashFloppy](https://github.com/keirf/FlashFloppy).
 
-1.1 Download the latest firmware from the [FlashFloppy](https://github.com/keirf/FlashFloppy) Github site.
-1.2 Set appropriate jumpers on the GoTek. I soldered in some pins to make this easier.
-1.3 Connect the GoTek to your computer using a USB-A to USB-A lead (a little unusual, but eBay to the rescue)
-1.4 Run the flash utility and upload the firmware to the GoTek. There are some more intructions in this [video](https://www.youtube.com/watch?v=-K31S2xqZIk&feature=youtu.be&t=841).
-1.5 Make a dontation to the FlashFloppy author.
+a) Download the latest firmware from the [FlashFloppy](https://github.com/keirf/FlashFloppy) Github site.
+b) Set appropriate jumpers on the GoTek. I soldered in some pins to make this easier.
+c) Connect the GoTek to your computer using a USB-A to USB-A lead (a little unusual, but eBay to the rescue)
+d) Run the flash utility and upload the firmware to the GoTek. There are some more intructions in this [video](https://www.youtube.com/watch?v=-K31S2xqZIk&feature=youtu.be&t=841).
+e) Make a dontation to the FlashFloppy author.
 
 2. Housing the GoTek
 
