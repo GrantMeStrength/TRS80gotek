@@ -5,7 +5,7 @@ The [TRS-80 Model 4 computers](https://en.wikipedia.org/wiki/TRS-80_Model_4) are
 
 ## Adding a GoTek to the TRS-80 Model 4
 
-A [GoTek](http://www.gotekemulator.com) is a piece of hardware designed to physicaly fill the space that would have been taken by a 3.5 inch floppy disk drive. It consists of a unit that accepts USB flash drives, a three digit LED display and two buttons (many users augment or replace these controls with OLED panels and rotary controls). The GoTek was created to replace floppy disk drives in equipment such as musical instruments and industrial control hardware - but they have proved very popular with retro computer user, as they can be used to replace drives in systems from Amigas to TI-99/4As with convenient USB drives. The GoTek hardware can be found on eBay and Amazon for $20 or less. There are several variations, and before you buy one you should read the links on this page to make sure to you're buying one that is compatible.
+A [GoTek](http://www.gotekemulator.com) is a piece of hardware designed to physicaly fill the space that would have been taken by a 3.5 inch floppy disk drive. It consists of a unit that accepts USB flash drives, a three digit LED display and two buttons (many users augment or replace these controls with OLED panels and rotary controls). The GoTek was created to replace floppy disk drives in equipment such as musical instruments and industrial control hardware - but they have proved very popular with retro computer user, as they can be used to replace drives in systems from Amigas to TI-99/4As with convenient USB drives. The GoTek hardware can be found on eBay and Amazon for $20 or less. There are several variations, and before you buy one you should [read the links on this page](www.github.com/keirf/FlashFloppy/wiki/Gotek-Compatibility) to make sure to you're buying one that is compatible.
 
 1. Changing the firmware
 
@@ -15,11 +15,13 @@ In order to use the GoTek you will first need to change the firmware to a new ve
 
 1.2 Set appropriate jumpers on the GoTek. I soldered in some pins to make this easier.
 
-c) Connect the GoTek to your computer using a USB-A to USB-A lead (a little unusual, but eBay to the rescue). [Here's a good set of instructions](http://www.binarydevotion.com/?p=228).
+1.3 Connect the GoTek to your computer using a USB-A to USB-A lead (a little unusual, but eBay to the rescue). [Here's a good set of instructions](http://www.binarydevotion.com/?p=228).
 
-d) Run the flash utility from [ST Microelectronics](http://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-programmers/stsw-stm32080.html) and upload the firmware to the GoTek. There are some more intructions in this [video](https://www.youtube.com/watch?v=-K31S2xqZIk&feature=youtu.be&t=841).
+1.4  Run the flash utility from [ST Microelectronics](http://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-programmers/stsw-stm32080.html) and upload the firmware to the GoTek. There are some more intructions in this [video](https://www.youtube.com/watch?v=-K31S2xqZIk&feature=youtu.be&t=841).
 
-e) Make a dontation to the FlashFloppy author.
+1.5 Make a dontation to the FlashFloppy author.
+
+This copy of [TRS8Bit](http://www.fabsitesuk.com/tandy/trs8bit1301.pdf) magazine has an excellent article covering all this.
 
 2. Housing the GoTek
 
@@ -36,7 +38,10 @@ Make sure to set the [GoTek jumpers](https://torlus.com/floppy/forum/viewtopic.p
 
 5. Obtaining a disk image
 
-Now format a USB stick to MS-DOS/FAT32 and put a TRS-80 bootable image on it.
+Now format a USB stick to MS-DOS/FAT32 and put a TRS-80 bootable image on it. You can create a disk image in .hfe format using a piece of software called the [HxCFloppyEmulator](hxc2001.free.fr/floppy_drive_emulator/index.html).
 
 ## Using the GoTek with a FreHD hard drive emulator
 
+My TRS-80 Model 4 had only one good floppy, so my goal was to boot from the GoTek and then mount the [FreHD](http://members.iinet.net.au/~ianmav/trs80/emulator.htm) hard drive emulator. 
+
+I was able to obtain an SD card with the necessary file structure from the kind folks on the [TRS-80 facebook group](https://www.facebook.com/groups/331822553911105/?multi_permalinks=859479207812101&notif_id=1582732527634985&notif_t=feedback_reaction_generic). 
