@@ -15,9 +15,9 @@ a) Download the latest firmware from the [FlashFloppy](https://github.com/keirf/
 
 b) Set appropriate jumpers on the GoTek. I soldered in some pins to make this easier.
 
-c) Connect the GoTek to your computer using a USB-A to USB-A lead (a little unusual, but eBay to the rescue)
+c) Connect the GoTek to your computer using a USB-A to USB-A lead (a little unusual, but eBay to the rescue). [Here's a good set of instructions](http://www.binarydevotion.com/?p=228).
 
-d) Run the flash utility and upload the firmware to the GoTek. There are some more intructions in this [video](https://www.youtube.com/watch?v=-K31S2xqZIk&feature=youtu.be&t=841).
+d) Run the flash utility from [ST Microelectronics](http://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-programmers/stsw-stm32080.html) and upload the firmware to the GoTek. There are some more intructions in this [video](https://www.youtube.com/watch?v=-K31S2xqZIk&feature=youtu.be&t=841).
 
 e) Make a dontation to the FlashFloppy author.
 
