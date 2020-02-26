@@ -5,15 +5,15 @@ The [TRS-80 Model 4 computers](https://en.wikipedia.org/wiki/TRS-80_Model_4) are
 
 ## Adding a GoTek to the TRS-80 Model 4
 
-A [GoTek](http://www.gotekemulator.com) is a piece of hardware designed to physicaly fill the space taken by a 3.5 inch floppy disk drive with a unit that accepts USB flash drives rather than a disk. They were created to replace floppy drives in equipment such as musical instruments, control hardware - but they have proved very popular with retro computer users. Systems from Amiga's to Amstrad's can have drives replaced with convenient USB drives. The GoTek hardware can be found on eBay and Amazon for $20 or less.
+A [GoTek](http://www.gotekemulator.com) is a piece of hardware designed to physicaly fill the space that would have been taken by a 3.5 inch floppy disk drive. It consists of a unit that accepts USB flash drives, a three digit LED display and two buttons (many users augment or replace these controls with OLED panels and rotary controls). The GoTek was created to replace floppy disk drives in equipment such as musical instruments and industrial control hardware - but they have proved very popular with retro computer user, as they can be used to replace drives in systems from Amigas to TI-99/4As with convenient USB drives. The GoTek hardware can be found on eBay and Amazon for $20 or less. There are several variations, and before you buy one you should read the links on this page to make sure to you're buying one that is compatible.
 
 1. Changing the firmware
 
 In order to use the GoTek you will first need to change the firmware to a new version called [FlashFloppy](https://github.com/keirf/FlashFloppy).
 
-a) Download the latest firmware from the [FlashFloppy](https://github.com/keirf/FlashFloppy) Github site.
+1.1 Download the latest firmware from the [FlashFloppy](https://github.com/keirf/FlashFloppy) Github site.
 
-b) Set appropriate jumpers on the GoTek. I soldered in some pins to make this easier.
+1.2 Set appropriate jumpers on the GoTek. I soldered in some pins to make this easier.
 
 c) Connect the GoTek to your computer using a USB-A to USB-A lead (a little unusual, but eBay to the rescue). [Here's a good set of instructions](http://www.binarydevotion.com/?p=228).
 
