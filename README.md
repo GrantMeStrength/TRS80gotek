@@ -1,6 +1,9 @@
 # TRS80gotek
 ## Configuring a TRS-80 Model 4 to book from a gotek floppy emulator and FreHD system
 
+
+![TRS-80 Model 4](trs804.png "TRS-80 Model 4 booting from USB")
+
 The [TRS-80 Model 4 computers](https://en.wikipedia.org/wiki/TRS-80_Model_4) are a family of systems from 1983, built and sold by Tandy/Radio Shack. They consist of a monitor, keyboard and floppy drives in one case with a very traditional "retro computer look", and continue to be popular to enthusiasts. They are Z80 based, with up to 128Kb of RAM. They run propritary disk operating systems but also CP/M. Today they are used mostly for nostalgic reasons.
 
 ## Adding a GoTek to the TRS-80 Model 4
