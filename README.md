@@ -48,3 +48,5 @@ Now format a USB stick to MS-DOS/FAT32 and put a TRS-80 bootable image on it. Yo
 My TRS-80 Model 4 had only one good floppy, so my goal was to boot from the GoTek and then mount the [FreHD](http://members.iinet.net.au/~ianmav/trs80/emulator.htm) hard drive emulator. 
 
 I was able to obtain an SD card with the necessary file structure from the kind folks on the [TRS-80 facebook group](https://www.facebook.com/groups/331822553911105/?multi_permalinks=859479207812101&notif_id=1582732527634985&notif_t=feedback_reaction_generic). 
+
+I had to add the FreHD.rom file to the root of the SD card, and then use a .hfe file on the USB card that contained the frehd autoboot loader on the boot sector of the "floppy". At least, that's what Matt told me :)
