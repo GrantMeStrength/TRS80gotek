@@ -45,8 +45,8 @@ Now format a USB stick to MS-DOS/FAT32 and put a TRS-80 bootable image on it. Yo
 
 ## Using the GoTek with a FreHD hard drive emulator
 
-My TRS-80 Model 4 had only one good floppy, so my goal was to boot from the GoTek and then mount the [FreHD](http://members.iinet.net.au/~ianmav/trs80/emulator.htm) hard drive emulator. 
+My TRS-80 Model 4 had only one good floppy, so my goal was to boot from the GoTek and then mount the [FreHD](http://members.iinet.net.au/~ianmav/trs80/emulator.htm) hard drive emulator. So you need two things: 
 
-I was able to obtain an SD card with the necessary file structure from the kind folks on the [TRS-80 facebook group](https://www.facebook.com/groups/331822553911105/?multi_permalinks=859479207812101&notif_id=1582732527634985&notif_t=feedback_reaction_generic). 
+1. The files for the USB drive that is in the GoTek. This consists of a .hfe file on the USB drive containing the frehd autoboot loader on the boot sector of the "floppy". At least, that's what Matt from the [TRS-80 facebook group](https://www.facebook.com/groups/331822553911105/?multi_permalinks=859479207812101&notif_id=1582732527634985&notif_t=feedback_reaction_generic) told me :) and he let me put his file into the repo as **frehdboot.hfe**. Download that to your USB stick. You'll also need the support files that tell the GoTek what kind of drive it is emulating.
 
-I had to add the FreHD.rom file to the root of the SD card, and then use a .hfe file on the USB card that contained the frehd autoboot loader on the boot sector of the "floppy". At least, that's what Matt told me :) and he let me put his file into the repo. Remember, you'll need to add the FreHD.rom file to the SD Card image when using this, or it won't boot - you'll see one blink of the green FreHD LED and then nothing will happen.
+2. The files for the FreHD SD Card. These are the standard files for the Model 4 that come on the CD-ROM supplied with the FreHD, with one change: you will need to add the FreHD.rom file to the root of the SD card or it won't boot - you'll see one blink of the green FreHD LED and then nothing will happen.
