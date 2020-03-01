@@ -1,10 +1,10 @@
 # TRS80gotek
-## Configuring a TRS-80 Model 4 to book from a gotek floppy emulator and FreHD system
+## Configuring a TRS-80 Model 4 to book from a GoTek floppy emulator to FreHD system
 
 
 ![TRS-80 Model 4](trs804.jpg "TRS-80 Model 4 booting from USB")
 
-The [TRS-80 Model 4 computers](https://en.wikipedia.org/wiki/TRS-80_Model_4) are a family of systems from 1983, built and sold by Tandy/Radio Shack. They consist of a monitor, keyboard and floppy drives in one case with a very traditional "retro computer look", and continue to be popular to enthusiasts. They are Z80 based, with up to 128Kb of RAM. They run propritary disk operating systems but also CP/M. Today they are used mostly for nostalgic reasons.
+The [TRS-80 Model 4 computers](https://en.wikipedia.org/wiki/TRS-80_Model_4) are a family of systems from 1983, built and sold by Tandy/Radio Shack. They consist of a monitor, keyboard and floppy drives in one case with a very traditional "retro computer look", and continue to be popular with enthusiasts. They are Z80 based, with up to 128Kb of RAM. They run propritary disk operating systems but also CP/M. Today they are used mostly for nostalgic reasons.
 
 ## Adding a GoTek to the TRS-80 Model 4
 
@@ -24,11 +24,11 @@ In order to use the GoTek you will first need to change the firmware to a new ve
 
 1.5 Make a dontation to the FlashFloppy author.
 
-This copy of [TRS8Bit](http://www.fabsitesuk.com/tandy/trs8bit1301.pdf) magazine has an excellent article covering all this.
+This copy of [TRS8Bit](http://www.fabsitesuk.com/tandy/trs8bit1301.pdf) magazine has an excellent article covering all this in detail with with more authority than here.
 
 2. Housing the GoTek
 
-I removed the GoTek from the original casing, and installed it into a laser-cut acrylic enclosure the same size as an original floppy drive. The plans I used to make my enclosure are included with the other files in this repo. I used 3mm thick black acrylic cut on a GlowForge. The exact spacings fitted the GoTek model I had, using 10mm spacers to lift it up off the base and line up the USB and buttons. I added a 5mm LED connected to the pins used by the existing LED on the GoTek. The smaller rectangular hole was for the 3 digital LED, the larger for the USB key and buttons. You may need to adapt for your specific model of GoTek and if you are using an OLED screen. 
+I removed the GoTek from the original casing, and installed it into a laser-cut acrylic enclosure the same size as an original floppy drive. The plans I used to make my enclosure are included with the other files in this repo as **FloppyDrivemk5.pdf**. I used 3mm thick black acrylic cut on a GlowForge. The exact spacings for mounting hole etc. matched the GoTek model I had, using 10mm spacers to lift it up off the base and line up the USB and buttons. I added a 5mm LED connected to the pins used by the existing LED on the GoTek. The smaller rectangular hole was for the 3 digital LED, the larger for the USB key and buttons. You may need to adapt for your specific model of GoTek and if you are using an OLED screen. 
 
 3. Getting the right cabling
 
@@ -41,12 +41,15 @@ Make sure to set the [GoTek jumpers](https://torlus.com/floppy/forum/viewtopic.p
 
 5. Obtaining a disk image
 
-Now format a USB stick to MS-DOS/FAT32 and put a TRS-80 bootable image on it. You can create a disk image in .hfe format using a piece of software called the [HxCFloppyEmulator](hxc2001.free.fr/floppy_drive_emulator/index.html). An example image that worked for me is included in this repo.
+Now format a USB stick to MS-DOS/FAT32 and put a TRS-80 bootable image on it. You can create a disk image in .hfe format using a piece of software called the [HxCFloppyEmulator](hxc2001.free.fr/floppy_drive_emulator/index.html). An example image that worked for me to boot up the FreHD is included in this repo called **UnzipIntoUSBRoot.zip** - which you should unzip into a freshly formatted USB drive. If you aren't using FreHD, you should use HxCFloppyEmulator to create your own custom drive. You can have multiple .hfe images on the same USB drive: you select the one you want with the buttons on the GoTek and the LED display lets you know which one is currently selected.
 
 ## Using the GoTek with a FreHD hard drive emulator
 
 My TRS-80 Model 4 had only one good floppy, so my goal was to boot from the GoTek and then mount the [FreHD](http://members.iinet.net.au/~ianmav/trs80/emulator.htm) hard drive emulator. So you need two things: 
 
-1. The files for the USB drive that is in the GoTek. This consists of a .hfe file on the USB drive containing the frehd autoboot loader on the boot sector of the "floppy". At least, that's what Matt from the [TRS-80 facebook group](https://www.facebook.com/groups/331822553911105/?multi_permalinks=859479207812101&notif_id=1582732527634985&notif_t=feedback_reaction_generic) told me :) and he let me put his file into the repo as **frehdboot.hfe**. Download that to your USB stick. You'll also need the support files that tell the GoTek what kind of drive it is emulating.
+1. The files for the USB drive that is in the GoTek. This consists of a .hfe file on the USB drive containing the frehd autoboot loader on the boot sector of the "floppy". At least, that's what Matt from the [TRS-80 facebook group](https://www.facebook.com/groups/331822553911105/?multi_permalinks=859479207812101&notif_id=1582732527634985&notif_t=feedback_reaction_generic) told me :) and he let me put his file into the repo as **frehdboot.hfe**. Download that to your USB stick. You'll also need the support files that tell the GoTek what kind of drive it is emulating. You can read the details behind Matt's work in the file **readme-frehd-boot.txt** and associated file **loader2.zip**.
 
 2. The files for the FreHD SD Card. These are the standard files for the Model 4 that come on the CD-ROM supplied with the FreHD, with one change: you will need to add the FreHD.rom file to the root of the SD card or it won't boot - you'll see one blink of the green FreHD LED and then nothing will happen.
+
+
+Note: This process should work for the TRS-80 Model III.
