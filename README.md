@@ -1,5 +1,5 @@
 # TRS80gotek
-## Configuring a TRS-80 Model 4 to book from a GoTek floppy emulator to FreHD system
+## Configuring a TRS-80 Model 4 to boot from a GoTek floppy emulator to FreHD system
 
 
 ![TRS-80 Model 4](trs804.jpg "TRS-80 Model 4 booting from USB")
