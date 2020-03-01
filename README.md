@@ -28,20 +28,20 @@ This copy of [TRS8Bit](http://www.fabsitesuk.com/tandy/trs8bit1301.pdf) magazine
 
 2. Housing the GoTek
 
-I removed the GoTek from the original casing, and installed it into a laser-cut acrylic enclosure the same size as an original floppy drive. 
+I removed the GoTek from the original casing, and installed it into a laser-cut acrylic enclosure the same size as an original floppy drive. The plans I used to make my enclosure are included with the other files in this repo. I used 3mm thick black acrylic cut on a GlowForge. The exact spacings fitted the GoTek model I had, using 10mm spacers to lift it up off the base and line up the USB and buttons. I added a 5mm LED connected to the pins used by the existing LED on the GoTek. The smaller rectangular hole was for the 3 digital LED, the larger for the USB key and buttons. You may need to adapt for your specific model of GoTek and if you are using an OLED screen. 
 
 3. Getting the right cabling
 
-You will need to tap 5v from inside the TRS-80 to connect to the power connector on the GoTek. However, the trickier part is building or buying the right floppy disk cable. I bought one from Jay at [NewSoft](http://plaidvest.com/newsoft/). You will need to specify if you want the GoTek to be drive 0 or 1 as this is set in the cable. I wanted it to be drive 0 so I could boot from it.
+You will need to tap 5v from inside the TRS-80 to connect to the power connector on the GoTek. However, the trickier part is building or buying the right floppy disk cable. The original TRS-80 drives have an edge connector, the GoTek a more modern (ish!) pin and socket connection. I obtained the right cable from Jay at [NewSoft](http://plaidvest.com/newsoft/). You will need to decide if you want the GoTek to be drive 0 or 1 as this is set in the cable. I wanted it to be drive 0 so I could boot from it. There's no reason why you couldn't connect two GoTeks.
 
 
 4. Setting the correct jumpers
 
-Make sure to set the [GoTek jumpers](https://torlus.com/floppy/forum/viewtopic.php?t=3171) to match your drive selection choice.
+Make sure to set the [GoTek jumpers](https://torlus.com/floppy/forum/viewtopic.php?t=3171) to match your drive selection choice. As the drive select is done through the cable, no matter how many GoTeks are used, they all would be set to same, lowest Drive Select option (I think).
 
 5. Obtaining a disk image
 
-Now format a USB stick to MS-DOS/FAT32 and put a TRS-80 bootable image on it. You can create a disk image in .hfe format using a piece of software called the [HxCFloppyEmulator](hxc2001.free.fr/floppy_drive_emulator/index.html).
+Now format a USB stick to MS-DOS/FAT32 and put a TRS-80 bootable image on it. You can create a disk image in .hfe format using a piece of software called the [HxCFloppyEmulator](hxc2001.free.fr/floppy_drive_emulator/index.html). An example image that worked for me is included in this repo.
 
 ## Using the GoTek with a FreHD hard drive emulator
 
