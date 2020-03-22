@@ -24,7 +24,7 @@ In order to use the GoTek you will first need to change the firmware to a new ve
 
 1.5 Make a dontation to the FlashFloppy author.
 
-This copy of [TRS8Bit](http://www.fabsitesuk.com/tandy/trs8bit1301.pdf) magazine has an excellent article covering all this in detail with with more authority than here.
+This copy of [TRS8Bit](http://www.fabsitesuk.com/tandy/trs8bit_year13.pdf) magazine has an excellent article covering all this in detail with with more authority than here.
 
 2. Housing the GoTek
 
